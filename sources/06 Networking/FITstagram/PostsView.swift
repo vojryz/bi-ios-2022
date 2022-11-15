@@ -58,28 +58,16 @@ struct PostsView: View {
                 Text("\(integer)")
             }
             .navigationDestination(for: Post.self) { post in
-                VStack {
-                    Text(post.author.username)
-                    
-                    Text("\(post.comments)")
-                    
-                    Button("PUSH FIRST POST") {
-                        path.append(posts[0])
-                    }
-                    
-                    Button("POP TO ROOT!") {
-                        path.removeLast(path.count)
-                    }
-                }
+                PostTappedDetail(post: post)
             }
             .navigationTitle("FITstagram")
         }
     }
-
+    
     private func fetchPosts() async {
         var request = URLRequest(url: URL(string: "https://fitstagram.ackee.cz/api/feed/")!)
         request.httpMethod = "GET"
-
+        
         do {
             let (data, _) = try await URLSession.shared.data(for: request)
             self.posts = try JSONDecoder().decode([Post].self, from: data)
@@ -87,8 +75,8 @@ struct PostsView: View {
             print("[ERROR]", error)
         }
     }
+    
 }
-
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         PostsView()
