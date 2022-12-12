@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A866D6A2946184600D697EF /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A866D692946184600D697EF /* NewPostView.swift */; };
 		781F5130290041510070E0D0 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F512F290041510070E0D0 /* Comment.swift */; };
 		781F5132290041DB0070E0D0 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F5131290041DB0070E0D0 /* CommentsView.swift */; };
 		781F5134290048770070E0D0 /* NewCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F5133290048770070E0D0 /* NewCommentView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A866D692946184600D697EF /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		781F512F290041510070E0D0 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		781F5131290041DB0070E0D0 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		781F5133290048770070E0D0 /* NewCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCommentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				789FBB2C28F7053400951950 /* ContentView.swift */,
 				789FBB3A28F7126600951950 /* PostView.swift */,
 				A315359929097DCB0086C161 /* ProfileView.swift */,
+				6A866D692946184600D697EF /* NewPostView.swift */,
 				A318C2AE2925452B000AC13E /* EditProfileView.swift */,
 				A315359B290982380086C161 /* RemoteImage.swift */,
 				781F51352900529D0070E0D0 /* PostsView.swift */,
@@ -198,6 +201,7 @@
 				781F51362900529D0070E0D0 /* PostsView.swift in Sources */,
 				7845E3CB291C0F0600B68288 /* CommentsContentView.swift in Sources */,
 				781F5132290041DB0070E0D0 /* CommentsView.swift in Sources */,
+				6A866D6A2946184600D697EF /* NewPostView.swift in Sources */,
 				781F5134290048770070E0D0 /* NewCommentView.swift in Sources */,
 				789FBB2D28F7053400951950 /* ContentView.swift in Sources */,
 				789FBB3B28F7126600951950 /* PostView.swift in Sources */,

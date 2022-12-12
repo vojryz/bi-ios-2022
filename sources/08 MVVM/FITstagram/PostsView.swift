@@ -65,7 +65,17 @@ struct PostsView: View {
             .navigationDestination(for: Post.self) { post in
                 CommentsView(viewModel: .init(postID: post.id))
             }
+            .task {
+                await fetchPosts()
+            }
             .navigationTitle("FITstagram")
+            .toolbar{
+                NavigationLink {
+                    NewPostView(postText:"")
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
             .navigationBarTitleDisplayMode(.inline)
         }
     }
